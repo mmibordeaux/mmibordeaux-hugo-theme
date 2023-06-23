@@ -6,3 +6,7 @@ params:
   seo:
     title:
       separator: "•"
+  breadcrumb:
+    position: after-hero
+  summary:
+    position: hero
