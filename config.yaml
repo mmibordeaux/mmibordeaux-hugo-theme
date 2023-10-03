@@ -10,3 +10,5 @@ params:
     position: after-hero
   summary:
     position: hero
+  search:
+    active: true
