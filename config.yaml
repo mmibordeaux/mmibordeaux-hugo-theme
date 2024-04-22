@@ -7,7 +7,7 @@ params:
     title:
       separator: "•"
   breadcrumb:
-    position: after-hero
+    position: hero-end
   summary:
     position: hero
   search:
