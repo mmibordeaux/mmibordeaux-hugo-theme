@@ -4,6 +4,9 @@
             width: 100%
             h1 + p
                 margin-top: $spacing-1
+            .lead
+                @include media-breakpoint-up(lg)
+                    width: columns(8)
 .page__home
     .hero
         align-items: flex-end
