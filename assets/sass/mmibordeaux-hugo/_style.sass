@@ -18,3 +18,20 @@
     ol 
         .active
             font-weight: bold
+
+.breadcrumb-container
+    // background: $color-background-alt
+    // border-top: 1px solid $color-border
+    border-bottom: 1px solid $color-border
+    margin-bottom: $spacing-5
+.blocks
+    .block-chapter
+        &--accent_background
+            background: none !important
+            .chapter
+                background: none !important
+                .text
+                    padding: 0 !important
+            .rich-text
+                color: $color-accent
+                @include lead-hero

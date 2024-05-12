@@ -7,7 +7,7 @@ params:
     title:
       separator: "•"
   breadcrumb:
-    position: hero-end
+    position: after-hero
   summary:
     position: hero
   search:
@@ -15,3 +15,6 @@ params:
   posts:
     index:
       layout: grid
+  persons:
+    single:
+      backlinks: true
