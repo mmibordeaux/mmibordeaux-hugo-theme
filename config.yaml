@@ -2,7 +2,7 @@ theme: osuny-hugo-theme-aaa
 params:
   logo:
     header: "/assets/images/logo-mmi.svg"
-    footer: "/assets/images/logo-mmi.svg"
+    footer: "/assets/images/logo-mmi-blanc.svg"
   seo:
     title:
       separator: "•"
