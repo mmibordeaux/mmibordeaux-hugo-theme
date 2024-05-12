@@ -12,3 +12,6 @@ params:
     position: hero
   search:
     active: true
+  posts:
+    index:
+      layout: grid
