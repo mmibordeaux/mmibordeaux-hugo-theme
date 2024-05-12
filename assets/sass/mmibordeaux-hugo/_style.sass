@@ -1,4 +1,7 @@
 .hero
+    align-items: flex-end
+    display: flex
+    min-height: 80vh
     &:not(.hero--with-image)
         .hero-text
             width: 100%
@@ -7,12 +10,11 @@
             .lead
                 @include media-breakpoint-up(lg)
                     width: columns(8)
-
+.lead
+    font-style: italic
+    margin-top: 0 !important
 .page__home
     .hero
-        align-items: flex-end
-        display: flex
-        min-height: 80vh
 
 .toc 
     ol 
