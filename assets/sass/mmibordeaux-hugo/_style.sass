@@ -19,7 +19,6 @@
     ol 
         .active
             font-weight: bold
-
 .breadcrumb-container
     border-top: 1px solid $color-border
     border-bottom: 1px solid $color-border
@@ -34,4 +33,6 @@
                     padding: 0 !important
             .rich-text
                 color: $color-accent
-                @include lead-hero
+                font-style: italic
+                @include media-breakpoint-up(lg)
+                    font-size: pxToRem(26)
