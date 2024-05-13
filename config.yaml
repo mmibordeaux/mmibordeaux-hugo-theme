@@ -12,6 +12,7 @@ params:
     position: hero
   search:
     active: true
+    position: footer
   posts:
     index:
       layout: grid
