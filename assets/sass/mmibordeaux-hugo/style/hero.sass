@@ -1,6 +1,4 @@
 .hero
-    align-items: flex-end
-    display: flex
     min-height: 80vh
     &:not(.hero--with-image)
         .hero-text
@@ -10,9 +8,25 @@
             .lead
                 @include media-breakpoint-up(lg)
                     width: columns(8)
+
+// Aligner les titres en bas    
 .page__home,
 .pages__section,
+.posts__section,
 .posts__page,
+.projects__section,
+.projects__page,
+.persons__page
+    .hero
+        align-items: flex-end
+        display: flex
+
+// Mettre l'image en arrière plan
+.page__home,
+.pages__section,
+.posts__section,
+.posts__page,
+.projects__section,
 .projects__page
     .hero--with-image 
         position: relative
@@ -26,6 +40,8 @@
                 margin: 0
                 overflow: hidden
                 mix-blend-mode: overlay
+
+// Textes plus larges et pas d'infos
 .projects__page
     .hero
         .hero-text
