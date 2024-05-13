@@ -1,0 +1,22 @@
+.blocks
+    @include in-page-without-sidebar
+        .block + .block
+            --block-space-y: #{space(64)}
+    .block-chapter
+        &--accent_background
+            background: none !important
+            .chapter
+                background: none !important
+                .text
+                    padding: 0 !important
+            .rich-text
+                color: $color-accent
+                font-style: italic
+                @include media-breakpoint-up(lg)
+                    font-size: pxToRem(26)
+.block-pages 
+    article 
+        .media
+            picture
+                img
+                    border-radius: $image-radius  

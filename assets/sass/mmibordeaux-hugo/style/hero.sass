@@ -1,0 +1,35 @@
+.hero
+    align-items: flex-end
+    display: flex
+    min-height: 80vh
+    &:not(.hero--with-image)
+        .hero-text
+            width: 100%
+            h1 + p
+                margin-top: $spacing-1
+            .lead
+                @include media-breakpoint-up(lg)
+                    width: columns(8)
+.page__home,
+.pages__section,
+.posts__page,
+.projects__page
+    .hero--with-image 
+        position: relative
+        .content 
+            figure
+                @include inset(0)
+                position: absolute
+                filter: blur(4px)
+                width: 100%
+                height: 100%
+                margin: 0
+                overflow: hidden
+                mix-blend-mode: overlay
+.projects__page
+    .hero
+        .hero-text
+            @include media-breakpoint-up(lg)
+                width: columns(8)
+        .project-infos
+            display: none
