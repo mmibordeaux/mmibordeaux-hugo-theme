@@ -1,5 +1,8 @@
 .hero
     min-height: 80vh
+    .hero-text
+        p
+            font-style: italic
     &:not(.hero--with-image)
         .hero-text
             width: 100%
@@ -30,7 +33,9 @@
 .projects__page
     .hero--with-image 
         position: relative
-        .content 
+        .content
+            .hero-text
+                width: 100%
             figure
                 @include inset(0)
                 position: absolute
